@@ -10,52 +10,74 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            text-align: center; /* Centraliza o conteúdo */
+            background-color: #121212; /* Cor de fundo do corpo */
+            color: #fff; /* Cor do texto */
         }
 
         table {
             border-collapse: collapse;
-            width: 50%;
-            margin-top: 20px;
+            width: 80%;
+            margin: 20px auto; /* Centraliza a tabela */
+            background-color: #505050;
         }
 
         th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #767676;
             padding: 8px;
             text-align: left;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #1E1E1E; /* Cor de fundo do cabeçalho */
+            color: #fff; /* Cor do texto do cabeçalho */
         }
 
         a {
-            color: blue;
-            text-decoration: underline;
-            cursor: pointer;
+            color: #00a0d8; /* Cor dos links */
+            text-decoration: none; /* Remover sublinhado dos links */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Adicionar sublinhado ao passar o mouse sobre os links */
+        }
+
+        /* Estilos para linhas com classe gray */
+        tr.gray {
+            background-color: #3B3B3B  ; /* Cor de fundo para linhas com classe gray */
         }
     </style>
 </head>
 <body>
 
-    <h2>GerenciadorCertificados</h2>
-
-    <table id="GerenciadorCertificados">
+    <table>
         <thead>
             <tr>
-                <th>Nome</th>
+                <th>Nome do Projeto</th>
+                <th>Nome (img)</th>
                 <th>URL</th>
             </tr>
         </thead>
         <tbody>
+            <!-- WPF - GerenciadorCertificados -->
             <tr>
+                <td>WPF - GerenciadorCertificados</td>
                 <td>Principal</td>
                 <td><a href="imgs/WPF_GerenciadorCertificados/principal.png" target="_blank">imgs/WPF_GerenciadorCertificados/principal.png</a></td>
             </tr>
             <tr>
+                <td>WPF - GerenciadorCertificados</td>
                 <td>Validação</td>
                 <td><a href="imgs/WPF_GerenciadorCertificados/validar.png" target="_blank">imgs/WPF_GerenciadorCertificados/validar.png</a></td>
             </tr>
+            <!-- Unity - GameRoleta -->
+            <tr class="gray">
+                <td>Unity - GameRoleta</td>
+                <td>Telas</td>
+                <td><a href="imgs/Unity_GameRoleta/principal.jpg" target="_blank">imgs/Unity_GameRoleta/principal.jpg</a></td>
+            </tr>
         </tbody>
     </table>
+
 </body>
 </html>
